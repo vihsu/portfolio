@@ -1,25 +1,22 @@
 #hero {
   min-height: 100vh;
   height: 100vh;
-  display: flex;
+  display:flex;
   align-items: center;
   border-bottom: 0px;
-  background: $white-color;
   font-weight: 400;
-  color: $dark-blue-text;
+  color: $dark-text;
+  background:$white-color;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
+  padding-right:0;
+  margin-left:15px;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: -1;
 
-  // If you want to set a background image on the hero section, uncomment these with yout custom image
-
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
@@ -49,7 +46,6 @@
 
   .hero-cta {
     display: flex;
-
     @include respond(tab-port) {
       justify-content: center;
     }
@@ -61,5 +57,43 @@
         font-size: 2rem;
       }
     }
+  }
+}
+#pattern{
+  display:in-line;
+  float:right;
+  width:70%;
+  height:100%;
+  @include respond(tab-land) {
+    display:none;
+  }
+  @include respond(tab-port) {
+    display:none;
+  }
+  @include respond(phone) {
+    display:none;
+  }
+  @include respond(phone-xs) {
+    display:none;
+  }
+}
+
+#graphic{
+  top:80px;
+  left:55%;
+  width: 45%;
+  opacity: 85%;
+  position:absolute;
+  @include respond(tab-land) {
+    display:none;
+  }
+  @include respond(tab-port) {
+    display:none;
+  }
+  @include respond(phone) {
+    display:none;
+  }
+  @include respond(phone-xs) {
+    display:none;
   }
 }

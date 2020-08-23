@@ -1,0 +1,41 @@
+#header{
+    text-transform:uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size:$default-font-size;
+    font-weight:500;
+    position:fixed;
+    top: 0;
+    width:100%;
+    z-index:1;
+}
+#header.scrolled{
+    background:$white-color;
+    opacity:85%;
+    transition:background 500ms;
+}
+.navbar{
+    padding: 15px;
+    float:left;
+}
+.navbar-nav{
+   margin-left:15px;
+}
+.brand-icon i{
+    margin-left: 15px;
+    color:$accent-text;
+}
+.nav-item{
+    list-style:none;
+    text-decoration:none;
+}
+.nav-link:hover{
+    color:$dark-text;
+}
+.nav-link.active{
+    color:$dark-text;
+}
+  
+.nav-link {
+    color:$accent-text;
+    margin-right:10px;
+}

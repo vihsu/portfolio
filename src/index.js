@@ -3,6 +3,11 @@ import initSr from './js/sr';
 
 import './style/main.scss';
 
+$(document).scroll(function(){
+  var $nav= $("#header");
+  $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+});
+
 $('a[href^="#"]').on('click', function(event) {
   var target = $(this.getAttribute('href'));
   if (target.length) {
@@ -17,6 +22,7 @@ $('a[href^="#"]').on('click', function(event) {
       );
   }
 });
+
 
 initSr();
 initTilt();

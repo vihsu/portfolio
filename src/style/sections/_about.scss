@@ -1,13 +1,13 @@
 #about {
-  background-color: $primary-color;
+  background-color: #fcf3ca;
   background-image: linear-gradient(
     135deg,
-    $primary-color 0%,
-    $secondary-color 100%
+    #fcf3ca 0%,
+    #fcf3ca 100%
   );
-  color: $white-color;
+  color: $dark-text;
   height: 100%;
-  border-top: 0px;
+  border-top: 5px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
@@ -48,6 +48,7 @@
       }
 
       &-text {
+        text-indent: 40px;
         text-align: left;
 
         @include respond(tab-port) {
